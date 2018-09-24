@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic Js Program</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<!--swap two numbers-->    
+<input type="number" class="form-control" placeholder="First Number" id="first">
+<input type="number" class="form-control" placeholder="Second Number" id="second">
+<button type="button" class="btn btn-primary" id="button" m-5>Swap</button>
+<input type="number" class="form-control" placeholder="First Number" id="fSwap">
+<input type="number" class="form-control" placeholder="Second Number" id="sSwap">
+
+
+  <!--Body Ends-->  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+//variable declartion
+var fNumber = document.querySelector('#first');
+var sNumber = document.querySelector('#second');
+var button = document.querySelector('#button');
+var fNum = document.querySelector('#fSwap');
+var sNum = document.querySelector('#sSwap')
+
+// event listener
+button.addEventListener('click',function(){
+    var a = fNumber.value;
+    var b = sNumber.value;
+    fNum.value = b;
+    sNum.value = a;
+
+
+
+});
+
+</script>
+  </body>
+
+</html>
